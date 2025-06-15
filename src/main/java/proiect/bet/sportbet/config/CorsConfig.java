@@ -13,7 +13,6 @@ public class CorsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://localhost:3000"); // Pentru testare locală
         config.addAllowedOrigin("https://demo-live-nu.vercel.app"); // Frontend-ul tău
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
